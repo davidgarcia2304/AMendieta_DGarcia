@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/estilos_general.css">
+    <link rel="stylesheet" href="./estilos/estilos_formulario.css">
+</head>
+<body>
+    <header>
+        <h1>Encabezado de la Página del Formulario</h1>
+        <a href="https://www.educa2.madrid.org/educamadrid/">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/educamadrid-mini.png" alt="educamadrid-mini">
+        </a>
+        <a href="https://site.educa.madrid.org/ies.alonsodeavellan.alcala/">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/cropped-logo_ies-1-1.png" alt="cropped-logo_ies-1-1">
+        </a> 
+        <a href="https://www.comunidad.madrid/servicios/educacion">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/logo_cam.png" alt="logo_cam">
+        </a> 
+    </header>
+    <nav> <!-- menú de navegación y no sé si ponerlo así o en el main -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="ruta_al_servidor" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <aside> <!-- barra lateral y lo mismo que con el nav -->
+        <h2>Barra lateral</h2>
+        <ul>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Alejandro Mendieta & David García | 2023 | DAM1 &copy;</p>
+        <a href="">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/logo_fp.png" alt="logo_fp">
+        </a>
+        <a href="">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/logo_ifp.png" alt="logo_ifp">
+        </a>
+        <a href="">
+            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/sepie-footer.gif" alt="sepie-footer">
+        </a>   
+    </footer>
+</body>
+</html>

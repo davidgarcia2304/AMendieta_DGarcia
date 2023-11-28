@@ -1,0 +1,132 @@
+/* Estilos generales aquí, tenemos que ver los del formulario */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#Museo {
+    text-align: center;
+    padding: 2rem;
+}
+
+#ape1 {
+    text-align: left;
+    padding: 2rem
+}
+
+#y {
+    text-align: center;
+    padding: 2rem;
+}
+
+#ape2 {
+    text-align: right;
+    padding: 2rem;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    color: aqua;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: aqua;
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration-line: underline;
+    color: red;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+img {
+    align-items: center;
+    width: 50em;
+    height: 40em;
+    align-items: center;
+}
+
+iframe {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+#Mapa {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section h2 {
+    text-align: center;
+}
+
+#parrafo {
+    text-align: center;
+}
+
+aside {
+    width: 25%;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos responsivos hechos con mi culete. Faltan móvil y tablet */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
