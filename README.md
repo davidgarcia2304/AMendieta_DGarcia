@@ -1,2 +1,2 @@
-# AMendieta_DGarcia
-Este es el repositorio remoto para la práctica de Lenguaje de marcas de el primer trimestre.
+# Práctica primera evaluación de Lenguaje de Marcas
+Esta es la primera páctica trimestral de la asignatura de Lenguaje de Marcas. En ella se nos pide que realicemos una página web con diferentes archivos HTML y CSS, empleando todos los contenidos vistos en el trimestre.
