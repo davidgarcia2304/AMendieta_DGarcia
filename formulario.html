@@ -5,29 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Web</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./estilos/estilos_general.css">
-    <link rel="stylesheet" href="./estilos/estilos_formulario.css">
+    <link rel="stylesheet" href="./estilos/estilos_general.css"> <!-- Enlace al archivo CSS común para todas las páginas -->
+    <link rel="stylesheet" href="./estilos/estilos_formulario.css"> <!-- Enlace al archivo CSS concreto para el formulario -->
 </head>
 <body>
     <header>
         <h1>Encabezado de la Página del Formulario</h1>
-        <a href="https://www.educa2.madrid.org/educamadrid/">
-            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/educamadrid-mini.png" alt="educamadrid-mini">
-        </a>
-        <a href="https://site.educa.madrid.org/ies.alonsodeavellan.alcala/">
-            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/cropped-logo_ies-1-1.png" alt="cropped-logo_ies-1-1">
-        </a> 
-        <a href="https://www.comunidad.madrid/servicios/educacion">
-            <img src="../Práctica Trimestre 1-20231116/imagenesHeaderFooter/logo_cam.png" alt="logo_cam">
-        </a> 
     </header>
-    <nav> <!-- menú de navegación y no sé si ponerlo así o en el main -->
+    <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
         </ul>
     </nav>
     <main>
-        <form action="ruta_al_servidor" method="post">
+        <form action="ruta_al_servidor" method="post"> <!-- Mirar si hacer un htmll o un SQL o PHP para introducir los datos -->
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
