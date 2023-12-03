@@ -37,7 +37,7 @@ header div {
 nav {
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 20px;
     background-color: #961313;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,21 +45,7 @@ nav {
     top: 0;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    width: 100%;
-    margin-top: 0;
-}
-
-nav ul li {
-    color: aqua;
-    display: inline;
-    margin-right: 2rem;
-    width: 100%;
-}
-
-nav ul li a {
+nav a {
     color: aqua;
     display: inline;
     margin-right: 2rem;
@@ -67,16 +53,11 @@ nav ul li a {
     width: 100%;
 }
 
-nav ul li a:hover {
+nav a:hover {
     text-decoration-line: underline;
     color: red;
     cursor: pointer;
 }
-
-main {
-    padding: 0px;
-}
-
 
 #Mapa {
     width: 100%;
