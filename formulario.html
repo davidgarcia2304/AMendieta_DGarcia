@@ -3,40 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Formulario de registro</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/general.css">
     <link rel="stylesheet" href="estilos/formulario.css">
 </head>
 <body>
-    <nav>
-        <details>
-            <summary>Menú</summary>
-            <ul>
-                <li><a href="index.html" target="_blank">Inicio</a></li>
-                <li><a href="abstracto.html" target="_blank">Arte Abstracto</a></li>
-                <li><a href="gotico.html" target="_blank">Arte Gótico</a></li>
-            </ul>
-        </details>
-    </nav>
     <header>
-        <h1>Museo Digital</h1>
-        <a href="https://museomadrid.com/museos-de-arte-en-madrid/">
-            <img id="musmad" src="img/imagenesHeaderFooter/museoMadrid.png" alt="museomadrid">
-        </a>
+        <nav>
+            <details>
+                <summary></summary>
+                <a href="index.html" target="_blank">Inicio</a>
+                <a href="abstracto.html" target="_blank">Arte Abstracto</a>
+                <a href="gotico.html" target="_blank">Arte Gótico</a>
+            </details>
+        </nav>
+        <h1>Formulario</h1>
     </header>
     <main>
         <section>
             <form action="ruta_al_servidor" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-    
+                <div>
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" placeholder="JohnDoe" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" placeholder="example@example.com" name="email" required>
+                </div>
+
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" minlength="8" placeholder="Debe contener al menos 8 caracteres" name="pwd" required>
+
+                <p>¿Desea recibir noticias acerca del museo?</p>
+                <label for="eleccion">Sí</label>
+                <input type="radio" name="eleccion">
+                <label for="eleccion">No</label>
+                <input type="radio" name="eleccion">
+
+                <label for="terminos">Acepto los <a href="">términos y condiciones</a></label>
+                <input type="checkbox" name="terminos" required>
+
+                <label for="comentario">¿Tiene algún comentario?</label>
+                <select name="razon_comentario" multiple size="5">
+                    <option value="web">Página web</option>
+                    <option value="museo">Museo</option>
+                    <option value="obras">Obras</option>
+                    <option value="abstracto">Arte abstracto</option>
+                    <option value="gotico">Arte gótico</option>
+                </select>
+                <textarea name="comentario" required></textarea>
+                <label for="archivo">Adjunte un archivo de utilidad:</label>
+                <input type="file" name="archivo">
+
+                <input type="reset" value="Borrar">
                 <input type="submit" value="Enviar">
             </form>
         </section>
