@@ -1,4 +1,10 @@
-footer {
-    position: fixed bottom;
+form {
+    display: flex;
+    flex-flow: row wrap;
+}
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
