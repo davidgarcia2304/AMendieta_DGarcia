@@ -1,6 +1,21 @@
 form {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: space-between;
+}
+
+form section {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#botones {
+    flex-direction: row;
 }
 
 footer {
