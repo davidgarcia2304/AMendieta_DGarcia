@@ -34,6 +34,7 @@ header div {
 }
 
 nav {
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: purple;
@@ -151,6 +152,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    flex-direction: row;
     justify-content: space-around;
 }
 

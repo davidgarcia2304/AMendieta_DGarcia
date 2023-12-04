@@ -10,41 +10,40 @@
 </head>
 <body>
     <header>
-        <nav>
-            <details>
-                <summary></summary>
-                <a href="index.html" target="_blank">Inicio</a>
-                <a href="abstracto.html" target="_blank">Arte Abstracto</a>
-                <a href="gotico.html" target="_blank">Arte Gótico</a>
-            </details>
-        </nav>
-        <h1>Formulario</h1>
+        <h1>Formulario de registro</h1>
     </header>
+    <nav>
+        <a href="index.html" target="_blank">Inicio</a>
+        <a href="abstracto.html" target="_blank">Arte Abstracto</a>
+        <a href="gotico.html" target="_blank">Arte Gótico</a>
+    </nav>
     <main>
-        <section>
-            <form action="ruta_al_servidor" method="post">
-                <div>
-                    <label for="nombre">Nombre de usuario</label>
-                    <input type="text" placeholder="JohnDoe" name="nombre" required>
-                </div>
+        <form action="ruta_al_servidor" method="post">
+            <section>
+                <label for="nombre">Nombre de usuario</label>
+                <input type="text" placeholder="Usa solo letras" name="nombre" required pattern="[a-z]">
 
-                <div>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" placeholder="example@example.com" name="email" required>
-                </div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" placeholder="example@example.com" name="email" required>
 
                 <label for="pwd">Contraseña</label>
-                <input type="password" id="pwd" minlength="8" placeholder="Debe contener al menos 8 caracteres" name="pwd" required>
+                <input type="password" id="pwd" minlength="8" placeholder="Mínimo 8 caracteres" name="pwd" required>
 
-                <p>¿Desea recibir noticias acerca del museo?</p>
-                <label for="eleccion">Sí</label>
-                <input type="radio" name="eleccion">
-                <label for="eleccion">No</label>
-                <input type="radio" name="eleccion">
+                <div>
+                    <p>¿Desea recibir noticias acerca del museo?</p>
+                    <label for="eleccion">Sí</label>
+                    <input type="radio" name="eleccion">
+                    <label for="eleccion">No</label>
+                    <input type="radio" name="eleccion">
+                </div>
+                
+                <div>
+                    <label for="terminos">Acepto los <a href="">términos y condiciones</a></label>
+                    <input type="checkbox" name="terminos" required>
+                </div>
+            </section>
 
-                <label for="terminos">Acepto los <a href="">términos y condiciones</a></label>
-                <input type="checkbox" name="terminos" required>
-
+            <section>
                 <label for="comentario">¿Tiene algún comentario?</label>
                 <select name="razon_comentario" multiple size="5">
                     <option value="web">Página web</option>
@@ -56,11 +55,13 @@
                 <textarea name="comentario" required></textarea>
                 <label for="archivo">Adjunte un archivo de utilidad:</label>
                 <input type="file" name="archivo">
+            </section>
 
+            <section id="botones">
                 <input type="reset" value="Borrar">
                 <input type="submit" value="Enviar">
-            </form>
-        </section>
+            </section>
+        </form>
     </main>
     <footer>
         <p>&copy; 2023 Museo Digital García & García</p>
